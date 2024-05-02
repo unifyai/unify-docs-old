@@ -10,7 +10,7 @@ Python Package Examples
         An interactive chatbot application.
 
     .. grid-item-card:: Synchronous vs Asynchronous Clients
-        :link: ./demos/Unify/AsyncvsSync/AsyncvsSync.ipynb
+        :link: ./demos/Unify/AsyncVsSync/AsyncVsSync.ipynb
 
         Exploring Sync vs Async Clients: Usage and Differences.
 
@@ -20,4 +20,4 @@ Python Package Examples
     :caption: Python Package Examples
 
     ./demos/Unify/ChatBot/ChatBot.ipynb
-    ./demos/Unify/AsyncvsSync/AsyncvsSync.ipynb
+    ./demos/Unify/AsyncVsSync/AsyncVsSync.ipynb

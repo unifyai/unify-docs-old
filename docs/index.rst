@@ -31,7 +31,7 @@
 
 .. toctree::
   :hidden:
-  :maxdepth: -1
+  :maxdepth: 4
   :caption: Demos
 
   demos/unify.rst
