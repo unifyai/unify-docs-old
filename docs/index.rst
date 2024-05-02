@@ -34,7 +34,9 @@
   :maxdepth: -1
   :caption: Demos
 
-  demos/demos.rst
+  demos/unify.rst
+  demos/langchain.rst
+  demos/llamaindex.rst
 
 ..
   .. toctree::

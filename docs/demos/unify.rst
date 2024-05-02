@@ -5,12 +5,12 @@ Python Package Examples
     :gutter: 4
 
     .. grid-item-card:: Building a ChatBot
-        :link: ./python-package-notebooks/ChatBot.ipynb
+        :link: ./demos/Unify/ChatBot/ChatBot.ipynb
 
         An interactive chatbot application.
 
     .. grid-item-card:: Synchronous vs Asynchronous Clients
-        :link: ./python-package-notebooks/AsyncvsSync.ipynb
+        :link: ./demos/Unify/AsyncvsSync/AsyncvsSync.ipynb
 
         Exploring Sync vs Async Clients: Usage and Differences.
 
@@ -19,5 +19,5 @@ Python Package Examples
     :maxdepth: -1
     :caption: Python Package Examples
 
-    ./python-package-notebooks/ChatBot.ipynb
-    ./python-package-notebooks/AsyncvsSync.ipynb
+    ./demos/Unify/ChatBot/ChatBot.ipynb
+    ./demos/Unify/AsyncvsSync/AsyncvsSync.ipynb

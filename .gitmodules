@@ -1,0 +1,3 @@
+[submodule "docs/demos/demos"]
+	path = docs/demos/demos
+	url = https://github.com/unifyai/demos.git
