@@ -14,6 +14,8 @@ Getting Started
 
 To start querying our endpoints, generate a Unify API key by :code:`Signing Up` through the `console <https://console.unify.ai/>`_ . Grab your key through the dashboard, and let's see how you can `make your first request! <https://unify.ai/docs/hub/home/make_your_first_request.html>`_
 
+For a deeper Walkthrough on how you can use the Unify console, check out the `walkthrough <https://unify.ai/docs/hub/home/walkthrough.html>`_ section.
+
 .. note::
     If you encounter any issue, have any suggestion, feature you'd like to see, or anything you think can be improved please get in touch with us on
     `Discord <https://discord.com/invite/sXyFF8tDtm>`_ or via :code:`hub@unify.ai`
