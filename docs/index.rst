@@ -7,6 +7,7 @@
   :maxdepth: -1
 
   Welcome to Unify! <self>
+  home/walkthrough.rst
   home/make_your_first_request.rst
   home/build_a_chatbot.rst
   home/pricing.rst
