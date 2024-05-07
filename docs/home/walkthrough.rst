@@ -134,7 +134,7 @@ To trigger periodic runtime benchmarking for a custom endpoint, simply add it to
   :width: 650
   :alt: Console Runtime Benchmarks.
 
-Once all endpoints are added, you can then go to the :code:`Runtime Benchmarks` page, and you’ll find your model listed. Note the **lock icon**, which indicates that this benchmark is private (only accessible from your own account).
+Once all endpoints are added, you can then go to the `Benchmarks <https://unify.ai/benchmarks>_` page, and you’ll find your model listed. Note the **lock icon**, which indicates that this benchmark is private (only accessible from your own account).
 
 .. image:: ../images/custom_benchmarks.png
   :align: center
@@ -178,9 +178,9 @@ The job can be expanded, to see each endpoint and dataset pair, and check the pr
   :width: 650
   :alt: Console Benchmarks Quality Quality Jobs.
 
-The entire history of benchmarking jobs can also be viewed by clicking on **History”*, like so.
+The entire history of benchmarking jobs can also be viewed by clicking on **History**, like so.
 
-.. image:: ../images/custom_benchmarks_quality_history.png
+.. image:: ../images/console_benchmarks_quality_history.png
   :align: center
   :width: 650
   :alt: Console Benchmarks Quality History.
@@ -208,10 +208,10 @@ On the dataset dropdown at the top, you can select any dataset of prompts to ben
 
 When clicked, the scatter graph will be replotted, on your own custom prompts in your dataset. If no quality benchmarks have been run, then the scatter graph will be empty. In this case, let's plot the benchmarks for the custom dataset **Customer Calls 1**.
 
-.. image:: ../images/console_dashboard_dataset.png
+.. image:: ../images/console_dashboard_custom_dataset.png
   :align: center
   :width: 650
-  :alt: Console Dashboard Dataset.
+  :alt: Console Dashboard Custom Dataset.
 
 We can see that the custom endpoints :code:`mixtral-tuned-finances`, :code:`llama-3-tuned-calls1` and :code:`llama-3-tuned-calls2` are plotted, alongside the foundation router, which is always plotted by default. If there is a model not plotted, but you would like it to be, then you can simply head over to the :code:`Benchmarks` page and trigger a quality benchmark job. Once the job completes, the model will then be visible in this dashboard.
 
@@ -359,13 +359,19 @@ Once saved, the new router view and router configuration are then both visible f
 
 With the configuration copied to the clipboard, all you now need to do is pass this into the Unify instructor if using the Python client, like so:
 
-```
-from unifyai import Unify
-unify = Unify(“openai-llama3-calls->no-anthropic_8.28e-03_4.66e-0.4_1.00e-06@unify”)
-response = unify.generate(user_prompt="Explain who Newton was and his entire theory of gravitation. Give a long detailed response please and explain all of his achievements")
-```
+.. code-block:: python
+
+    import os
+    from unify import Unify
+
+    unify = Unify(
+        api_key=os.environ.get("UNIFY_KEY"),
+        endpoint="openai-llama3-calls->no-anthropic_8.28e-03_4.66e-0.4_1.00e-06@unify”",
+    )
+
+    response = unify.generate(user_prompt="Explain who Newton was and his entire theory of gravitation. Give a long detailed response please and explain all of his achievements")
 
 .. note::
-    You can also query the API with a CuRL request, among others. For more details head to the `make your first request <https://unify.ai/docs/hub/home/make_your_first_request.html>` section.
+    You can also query the API with a CuRL request, among others. For more details head to the next section to learn how you can make your first request.
 
 That’s it! You now know how to explore the various configurations of your custom trained router, and get it deployed in your own application.
