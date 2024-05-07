@@ -65,13 +65,13 @@ With your payment information set-up, you can now toggle automatic refill on and
 
 
 Adding custom endpoints (Beta)
------------------------------
+------------------------------
 
 Prerequisite
 ^^^^^^^^^^^^
 Firstly, you’ll need to set up your own LLM endpoints. One option is to use off-the-shelf endpoints, such as those available in the `Azure ML Model Catalog <https://learn.microsoft.com/en-us/azure/machine-learning/concept-model-catalog>`_, `Vertex AI Model Garden <https://cloud.google.com/model-garden>`_ and `AWS Bedrock <https://aws.amazon.com/bedrock>`_.
 
-Alternatively, you can create and host your own LLM endpoint. There are a whole variety of ways to do this, but again it’s most common to do so via one of the major cloud providers. Feel free to check out these tutorials for creating custom LLM endpoints on `Azure ML <https://learn.microsoft.com/en-us/azure/machine-learning/how-to-deploy-custom-container>`_, `AWS Bedrock <https://docs.aws.amazon.com/bedrock/latest/userguide/model-customization-use.html>`_ and `Vertex AI <https://cloud.google.com/vertex-ai/docs/predictions/use-custom-container>`_.
+Alternatively, you can create and host your own LLM endpoint. There are a whole variety of ways to do this, but again it’s most common to do so via one of the major cloud providers. Feel free to check out these tutorials for creating custom LLM endpoints on `Azure ML <https://learn.microsoft.com/en-us/azure/machine-learning/how-to-deploy-custom-container>`_, `Bedrock <https://docs.aws.amazon.com/bedrock/latest/userguide/model-customization-use.html>`_ and `Vertex AI <https://cloud.google.com/vertex-ai/docs/predictions/use-custom-container>`_.
 
 Regardless of how you set up your LLM endpoints, it’s important that you expose an API for this, and that this API **adheres to** the `OpenAI standard <https://platform.openai.com/docs/api-reference>`_. This is necessary in order to integrate with Unify. We intended to broaden support to other API formats at a later date.
 
@@ -159,10 +159,10 @@ This time, going to to the **Quality Benchmarks** subsection. We can click on **
 
 You need to specify the endpoints and the datasets you would like to benchmark. All endpoints will be tested on all datasets. If you only want to test some endpoints on some datasets, then you should submit multiple jobs.
 
-.. image:: ../images/console_quality_benchmarks.png
+.. image:: ../images/console_benchmarks_quality.png
   :align: center
   :width: 650
-  :alt: Console Quality Benchmarks.
+  :alt: Console Benchmarks Quality.
 
 Once you are happy with the selection, press **Submit** and then the job will appear in the **Running Jobs** section, as shown below.
 
@@ -242,9 +242,9 @@ Going to the :code:`Routers` page, we can click on any router and see the models
   :alt: Console Routers.
 
 To add a new router, first click **Add Router**. The upload window enables you to name the router, and specify the endpoints to route between and datasets to train on.
-We'll name the router :code:`gpt4-llama3-calls`, as we intend to train on our custom call datasets and use GPT4 as well as the base llama3 and our fine tuned variants.
+We'll name the router :code:`gpt-claude-llama3-calls`, as we intend to train on our custom call datasets and use GPT 4 as well as Claude 3, the base Llama 3 model, and our fine tuned variants.
 
-The models are those which the router will be able to select between, and the datasets will be used as the input prompts to the router system to train which models to use, based on the quality of the output, with GPT4-as-a-judge responsible for the scoring. You can select the included models and / or datasetsfrom the corresponding dropdowns. Your custom model endpoints and datasets are included in the lists.
+The models are those which the router will be able to select between, and the datasets will be used as the input prompts to the router system to train which models to use, based on the quality of the output, with GPT4-as-a-judge responsible for the scoring. You can select the included models and / or datasets from the corresponding dropdowns. Your custom model endpoints and datasets are included in the lists.
 
 .. image:: ../images/console_routers_train.png
   :align: center
@@ -252,7 +252,7 @@ The models are those which the router will be able to select between, and the da
   :alt: Console Routers Train.
 
 .. note::
-    You can notice that the endpoint providers are not listed. This is because the router training does not depend on the provider, only the model.
+    You may notice that the endpoint providers are not listed. This is because the router training does not depend on the provider, only the model.
 
 Finally, clicking the **Train** button will submit a training job! Your router configuration will be grayed out while the training is being performed. While the benchmarks are being performed.
 
@@ -265,7 +265,7 @@ In order to train a router, it’s necessary to first evaluate the performance o
 
 If you go to the **Benchmarks** page, you’ll see that the router training job has automatically scheduled some quality benchmarks on your behalf. For any quality benchmarks which have already been performed ahead of time, the work will not be duplicated.
 
-For example, we previously benchmarked :code:`llama-3-tuned-calls1` and :code:`llama-3-tuned-call2` on the datasets :code:`customer-calls1` and :code:`customer-calls2`, so this will not be repeated (see above). However, we have not yet benchmarked :code:`llama-3-70b-chat` and :code:`gpt-4` on these datasets, so these are automatically triggered by the router training request.
+For example, we previously benchmarked :code:`llama-3-tuned-calls1` and :code:`llama-3-tuned-call2` on the datasets :code:`customer-calls1` and :code:`customer-calls2`, so this will not be repeated (see above). However, we have not yet benchmarked :code:`llama-3-70b-chat` and :code:`gpt-4` on these datasets for e.g, so these are automatically triggered by the router training request.
 
 .. note::
     You will receive an email, so no need to manually track the progress!
@@ -282,7 +282,7 @@ Once the router training is complete, you will receive a second email. The route
 That’s it, you’ve now trained your own custom router, to route between your own custom models, trained directly on your own prompt data, to reflect the task you care about!
 
 Deploy your custom router (Beta)
--------------------------------
+--------------------------------
 
 Now that we have a custom trained router, the next step is to explore the various possible configurations for this router, each trading off quality, speed and cost in different variations. These various options can be visualized in the **Dashboard**.
 
@@ -314,7 +314,7 @@ Of course, only the models the router has been trained on will be visible in the
 We don’t want to save the router view to our account, we’re only testing at the moment. We therefore click **Apply**.
 
 .. note::
-    Alternatively, if we had clicked **Save** then it would have simply overwritten the router :code:`openai-llama3-calls` in place, again limited to this dashboard   session only.
+    Alternatively, if we had clicked **Save** then it would have simply overwritten the router :code:`gpt-clauce-llama3-calls` in place, again limited to this dashboard   session only.
 
 In the key, the router view is displayed nested underneath the router which it is a view of.
 
@@ -345,9 +345,9 @@ As with the router views, we can save this router configuration either to the da
   :alt: Console Dashboard Custom Selected.
 
 .. note::
-    This router configuration depends on the router view **openai-llama3-calls->no-anthropic**, which has not yet been saved to the account. We are therefore informed that this will also save the router view to the account.
+    This router configuration depends on the router view **gpt-claude-llama3-calls->no-anthropic**, which has not yet been saved to the account. We are therefore informed that this will also save the router view to the account.
 
-Once saved, the new router view and router configuration are then both visible from the **Routers** page of your account. You can delete router views and router configurations anytime from that page. Pressing the copy button beside the configuration will copy the full configuration to the clipboard, being :code:`gpt4-llama3-calls->no-anthropic_8.28e-03_4.66e-0.4_1.00e-06@unify`.
+Once saved, the new router view and router configuration are then both visible from the **Routers** page of your account. You can delete router views and router configurations anytime from that page. Pressing the copy button beside the configuration will copy the full configuration to the clipboard, being :code:`gpt-claude-llama3-calls->no-anthropic_8.28e-03_4.66e-0.4_1.00e-06@unify`.
 
 .. image:: ../images/console_routers_configurations_views.png
   :align: center
@@ -366,7 +366,7 @@ With the configuration copied to the clipboard, all you now need to do is pass t
 
     unify = Unify(
         api_key=os.environ.get("UNIFY_KEY"),
-        endpoint="openai-llama3-calls->no-anthropic_8.28e-03_4.66e-0.4_1.00e-06@unify”",
+        endpoint="gpt-claude-llama3-calls->no-anthropic_8.28e-03_4.66e-0.4_1.00e-06@unify”",
     )
 
     response = unify.generate(user_prompt="Explain who Newton was and his entire theory of gravitation. Give a long detailed response please and explain all of his achievements")
