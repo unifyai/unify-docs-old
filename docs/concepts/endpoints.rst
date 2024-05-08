@@ -30,5 +30,4 @@ You can explore our list of supported models through the `benchmarks interface <
 Round Up
 --------
 
-You are now familiar with the concept of endpoint and the various types of endpoints we expose. In the next section,
-we'll dive into the **Benchmarks** and how they can help you find the best endpoint for your needs!
+You are now familiar with the concept of endpoint and the various types of endpoints we expose. In the next section, we'll dive into the **Benchmarks** and how they can help you find the best endpoint for your needs!

@@ -3,9 +3,10 @@ Pricing and Credits
 
 Credits are consumed when using the API. Each credit corresponds to 1 USD and there are **no charges on top of provider costs**; as a result, consumed credits directly reflect the cost of a request.
 
-We’re currently integrating a payment system to purchase additional credits. Meanwhile, we’re granting each user the equivalent to $50 in free credits when creating an account.
+You can manage your billing and payments though the :code:`Billing` section of your `Unify Console <https://console.unify.ai>`_. **Upon signing-up, you are automatically granted $50 in free credits!**
 
-You will soon be able to check this out properly in a dashboard. In the meantime, you can query the `Get Credits Endpoint <https://unify.ai/docs/hub/reference/endpoints.html#get-credits>`_ of the API to get your current credit balance.
+.. note::
+    If you want to check your current balance, you can do so at any time through the console but also directly within your terminal by querying the `Get Credits Endpoint <https://unify.ai/docs/hub/reference/endpoints.html#get-credits>`_ of the API.
 
 Top-up Code
 -----------

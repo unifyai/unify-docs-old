@@ -134,7 +134,7 @@ To trigger periodic runtime benchmarking for a custom endpoint, simply add it to
   :width: 650
   :alt: Console Runtime Benchmarks.
 
-Once all endpoints are added, you can then go to the `Benchmarks <https://unify.ai/benchmarks>_` page, and you’ll find your model listed. Note the **lock icon**, which indicates that this benchmark is private (only accessible from your own account).
+Once all endpoints are added, you can then go to the `Benchmarks <https://unify.ai/benchmarks>`_ page, and you’ll find your model listed. Note the **lock icon**, which indicates that this benchmark is private (only accessible from your own account).
 
 .. image:: ../images/custom_benchmarks.png
   :align: center

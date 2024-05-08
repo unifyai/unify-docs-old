@@ -18,7 +18,7 @@
   :caption: Concepts
 
   concepts/endpoints.rst
-  concepts/benchmarks.rst
+  concepts/runtime_benchmarks.rst
   concepts/runtime_routing.rst
 ..  concepts/on_prem_images.rst
 

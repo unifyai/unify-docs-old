@@ -1,7 +1,9 @@
-Benchmarks
-==========
+Runtime Benchmarks
+==================
 
-One of the fundamental missions of Unify is to help you navigate through the maze of LLM deployment options and find the best solution for your needs. Because this is a complex decision, it needs to be made based on data. For this data to be reliable, it should also result from transparent and objective measurements, which we outline in this section.
+Finding the best model(s) for a task is just the first step to optimize LLM pipelines. Given the plethora of endpoint providers offering the same models, true optimization requires considering performance discrepancies across endpoints and time.
+
+Because this is a complex decision, it needs to be made based on data. For this data to be reliable, it should also result from transparent and objective measurements, which we outline in this section.
 
 .. note::
     Our benchmarking code is openly available in `this repository <https://github.com/unifyai/aibench-llm-endpoints>`_.
