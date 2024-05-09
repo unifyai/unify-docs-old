@@ -3,24 +3,28 @@ Welcome to Unify!
 
 Unify is your centralized platform for LLM endpoints. If you’re using or planning to use an LLM in your application or service, Unify lets you:
 
-* **🔑 Use any endpoint with one key**: You only need a Unify API Key to access the latest LLMs through any endpoint provider. Each model has a unfied API that enables seamless provider switching without needing to refactor.
+* **🚀 Route to the best endpoints**: Send each prompt to the endpoint(s) that will (a) return the best response, and (b) yield the best performance for a target metric of your choice, including high-throughput, low cost or low latency.
 
-* **🚀 Route to the best endpoints**: Each prompt is assessed separately and sent to the endpoint(s) that will (a) return the best response, and (b) yield the best performance for a target metric of your choice, including high-throughput, low cost or low latency.
+* **⚖️ Benchmark endpoint performance**: Objectively compare endpoints speed, latency and costs with our dynamic benchmarks to make informed decisions when selecting a model or provider.
 
-* **⚖️ Benchmark endpoint performance**: Our live, dynamic benchmarks let you objectively compare endpoints speed, latency and costs; to make informed decisions when selecting the model or provider that fits your needs.
+* **🔑 Use any endpoint with a single key**: Access the latest LLMs through any endpoint provider with a single API Key to. Each model has a unfied API that enables seamless provider switching without needing to refactor your code.
 
-.. note::
-    You will soon be able to customize the routing and benchmarks on your own datasets. If you'd like to try it out already, feel free to `reach out to us <https://calendly.com/daniel-lenton/beta-discussion>`_.
+.. raw:: html
+
+    <div style="text-align: center;">
+        <iframe width="420" height="315" allow="fullscreen;"
+            src="https://youtube.com/watch?v=15wgxK1Cw0E" class="video">
+        </iframe>
+    </div>
 
 Getting Started
 ---------------
 
-To start querying our endpoints, first generate a Unify API key by :code:`Signing Up` through the `Unify Console <https://console.unify.ai/>`_ . 
+We recommend you give the concepts section a quick read to get familiar with routing and benchmarking. Once you're ready to go, start by :code:`signing-in` through the `Unify Console <https://console.unify.ai/>`_. From this point you can either learn how to:
 
-We recommend you go through out `walkthrough <https://unify.ai/docs/hub/home/walkthrough.html>`_ to discover how to use the console. If you'd like to jump to coding, let's see how you can `make your first request! <https://unify.ai/docs/hub/home/make_your_first_request.html>`_
+* **Use our interfaces (Recommended)**: The interfaces guides explain how to interact with endpoints and deploy your custom router in a no-code environment. 
 
+* **Make your first request**: The `quickstart <https://unify.ai/docs/hub/home/make_your_first_request.html>`_ guide explains how to start querying endpoints with our API,  
 
-
-.. note::
-    If you encounter any issue, have any suggestion, feature you'd like to see, or anything you think can be improved please get in touch with us on
-    `Discord <https://discord.com/invite/sXyFF8tDtm>`_ or via :code:`hub@unify.ai`
+.. warning::
+    Throughout the guides, you'll notice some sections marked as (Beta). **Any section marked as Beta is currently not available** and only illustrate planned features we are currently working on. We're constantly iterating on our roadmap so if you'd like to leave some feedback or suggestion on features you'd like to see, `we'd love to discuss <https://calendly.com/daniel-lenton/beta-discussion>`_ this with you!
