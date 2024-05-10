@@ -1,17 +1,16 @@
-Endpoints
-=========
+API Reference
+=============
 
 Welcome to the Endpoints API reference!
 This page is your go-to resource when it comes to learning about the different Unify API endpoints you can interact with.
 
 .. note::
-  To use the endpoints you will need an API Key. If you don't have one yet, you can go through the instructions in
-  `this page <https://unify.ai/docs/hub/index.html>`_.
+  If you don't have one yet, `Sign Up <https://console.unify.ai>`_ first to get your API key.
 
 -----
 
 GET /get_credits
------------
+----------------
 
 **Get Current Credit Balance**
 

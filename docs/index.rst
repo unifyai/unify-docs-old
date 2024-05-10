@@ -7,27 +7,26 @@
   :maxdepth: -1
 
   Welcome to Unify! <self>
-  home/walkthrough.rst
-  home/make_your_first_request.rst
-  home/build_a_chatbot.rst
-  home/pricing.rst
 
 .. toctree::
   :hidden:
   :maxdepth: -1
-  :caption: Concepts
+  :caption: Interfaces
 
-  concepts/endpoints.rst
-  concepts/benchmarks.rst
-  concepts/runtime_routing.rst
-..  concepts/on_prem_images.rst
+  interfaces/setting_up.rst
+  interfaces/connecting_stack.rst
+  interfaces/running_benchmarks.rst
+  interfaces/building_router.rst
 
 .. toctree::
   :hidden:
   :maxdepth: -1
-  :caption: API reference
+  :caption: API
 
-  reference/endpoints.rst
+  api/first_request.rst
+  api/deploy_router.rst
+  api/reference.rst
+
 ..  reference/images.rst
 
 .. toctree::
@@ -49,3 +48,12 @@
     tools/openapi.rst
     tools/python_library.rst
 
+.. toctree::
+  :hidden:
+  :maxdepth: -1
+  :caption: Concepts
+
+  concepts/endpoints.rst
+  concepts/benchmarks.rst
+  concepts/routing.rst
+..  concepts/on_prem_images.rst
