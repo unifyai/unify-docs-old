@@ -50,12 +50,10 @@ To use it in your script, import the package and initialize a :code:`Unify` clie
     import os
     from unify import Unify
 
-    unify = Unify(
-        api_key=os.environ.get("UNIFY_KEY"),
-        endpoint="mistral-7b-instruct-v0.2@fireworks-ai",
-    )
+    # Assuming you added "UNIFY_KEY" to your environment variables. Otherwise you would specify the api_key argument.
+    unify = Unify("mistral-7b-instruct-v0.2@fireworks-ai")
 
-    response = unify.generate(user_prompt="Explain who Newton was and his entire theory of gravitation. Give a long detailed response please and explain all of his achievements")
+    response = unify.generate("Explain who Newton was and his entire theory of gravitation. Give a long detailed response please and explain all of his achievements")
 
 This will return a string containing the model's response.
 

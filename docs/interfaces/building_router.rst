@@ -100,7 +100,7 @@ We select a data point that looks balanced. We can see that, on this dataset, th
 .. note::
     Once the point is selected, that same point will be visible across all metrics graphs, with x axes for cost, inter-token-latency and time-to-first-token. This lets you verify how the configuration performs for other metrics.
 
-As with the router views, we can either save this router configuration for the current session by clicking on :code:`Apply`, or permanently to our user account. Let’s assume we’re very happy with this configuration, and we don’t want to forget it. We’ll therefore save it to our account by clicking :code:`Save As`.
+As with the router views, we can either save this router configuration for the current session by clicking on :code:`Apply`, or permanently to our user account. Let’s assume we’re very happy with this configuration, and we don’t want to forget it. We’ll therefore save it to our account by clicking :code:`Save As`. This opens a window where we can change the name our configuration before saving it.
 
 .. image:: ../images/console_dashboard_custom_configuration.png
   :align: center

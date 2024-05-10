@@ -32,12 +32,10 @@ For e.g, with the Python package, we can route to the lowest TTFT endpoints as f
     import os
     from unify import Unify
 
-    unify = Unify(
-        api_key=os.environ.get("UNIFY_KEY"),
-        endpoint="mistral-7b-instruct-v0.2@lowest-ttft",
-    )
+    # Assuming you added "UNIFY_KEY" to your environment variables. Otherwise you would specify the api_key argument.
+    unify = Unify("mistral-7b-instruct-v0.2@lowest-ttft")
 
-    response = unify.generate(user_prompt="Explain who Newton was and his entire theory of gravitation. Give a long detailed response please and explain all of his achievements")
+    response = unify.generate("Explain who Newton was and his entire theory of gravitation. Give a long detailed response please and explain all of his achievements")
 
 
 Defining thresholds
@@ -69,18 +67,15 @@ explanation. You can detect this and change your policy doing something like:
 
     prompt = "Explain who Newton was and his entire theory of gravitation. Give a long detailed response please and explain all of his achievements"
 
-    unify = Unify(
-        api_key=os.environ.get("UNIFY_KEY"),
-        # This won't work since no provider has this price! (yet?)
-        endpoint="mistral-7b-instruct-v0.2@lowest-itl<0.001ic",
-    )
+    # This won't work since no provider has this price! (yet?)
+    unify = Unify("mistral-7b-instruct-v0.2@lowest-itl<0.001ic")
 
-    response = unify.generate(user_prompt=prompt)
+    response = unify.generate(prompt)
 
     if response.status_code == 404:
       # We'll get the cheapest endpoint as a fallback
       payload["model"] = "mistral-7b-instruct-v0.2@lowest-input-cost"
-      response = unify.generate(user_prompt=prompt)
+      response = unify.generate(prompt)
 
 
 .. raw:: html
@@ -122,12 +117,10 @@ If you `trained a custom router <https://unify.ai/docs/interfaces/build_router.h
     import os
     from unify import Unify
 
-    unify = Unify(
-        api_key=os.environ.get("UNIFY_KEY"),
-        endpoint="gpt-claude-llama3-calls->no-anthropic_8.28e-03_4.66e-0.4_1.00e-06@unify”",
-    )
+    # Assuming you added "UNIFY_KEY" to your environment variables. Otherwise you would specify the api_key argument.
+    unify = Unify("gpt-claude-llama3-calls->no-anthropic_8.28e-03_4.66e-0.4_1.00e-06@custom”)
 
-    response = unify.generate(user_prompt="Explain who Newton was and his entire theory of gravitation. Give a long detailed response please and explain all of his achievements")
+    response = unify.generate("Explain who Newton was and his entire theory of gravitation. Give a long detailed response please and explain all of his achievements")
 
 .. note::
     You can also query the API with a CuRL request, among others. Just like explained in the first request page.
