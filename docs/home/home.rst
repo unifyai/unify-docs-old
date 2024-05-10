@@ -9,14 +9,6 @@ Unify is your centralized platform for LLM endpoints. If you’re using or plann
 
 * **🔑 Use any endpoint with a single key**: Access the latest LLMs through any endpoint provider with a single API Key to. Each model has a unfied API that enables seamless provider switching without needing to refactor your code.
 
-.. raw:: html
-
-    <div style="text-align: center;">
-        <iframe width="420" height="315" allow="fullscreen;"
-            src="https://youtube.com/watch?v=15wgxK1Cw0E" class="video">
-        </iframe>
-    </div>
-
 Getting Started
 ---------------
 
