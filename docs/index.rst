@@ -13,7 +13,6 @@
   :maxdepth: -1
   :caption: Interfaces
 
-  interfaces/setting_up.rst
   interfaces/connecting_stack.rst
   interfaces/running_benchmarks.rst
   interfaces/building_router.rst
