@@ -23,16 +23,14 @@ You can select the included models and / or datasets from the corresponding drop
 .. note::
     You may notice that the endpoint providers are not listed. This is because the router training does not depend on the provider, only the model.
 
-Finally, clicking the :code:`Train` button will submit a training job. Your router configuration will be grayed out during the benchmarking and training processes.
+Finally, clicking the :code:`Train` button will submit a training job. If you go to the :code:`Benchmarks` page, you’ll see that the router training job has automatically scheduled some quality benchmarks on your behalf. For any quality benchmarks which have already been performed ahead of time, the work will not be duplicated.
 
 .. image:: ../images/console_routers_benchmarking.png
   :align: center
   :width: 650
   :alt: Console Routers Benchmarking.
 
-If you go to the :code:`Benchmarks` page, you’ll see that the router training job has automatically scheduled some quality benchmarks on your behalf. For any quality benchmarks which have already been performed ahead of time, the work will not be duplicated.
-
-For example, we previously benchmarked :code:`llama-3-tuned-calls1` and :code:`llama-3-tuned-call2` on the datasets :code:`customer-calls1` and :code:`customer-calls2`, so this will not be repeated. However, we have not yet benchmarked :code:`llama-3-70b-chat` and :code:`gpt-4` on these datasets for e.g, so these are automatically triggered by the router training request.
+For example, we previously benchmarked :code:`llama-3-tuned-calls1` and :code:`llama-3-tuned-call2` on the datasets :code:`Customer Calls Q1` and :code:`Customer Calls Q2`, so this will not be repeated. However, we have not yet benchmarked :code:`llama-3-70b-chat` and :code:`gpt-4` on these datasets for e.g, so these are automatically triggered by the router training request.
 
 .. note::
     You will receive an email when the results are ready, so no need to manually track the progress!

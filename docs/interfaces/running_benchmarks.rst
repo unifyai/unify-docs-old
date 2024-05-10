@@ -1,7 +1,7 @@
 Benchmarking endpoints
 ======================
 
-In this section, you'll learn explore how to navigate our benchmarks and run your own custom ones.
+In this section, you'll explore how to navigate our benchmarks and run your own custom ones.
 
 .. note::
     You can learn about the methodology behind our benchmarks, and the various metrics used, on the `benchmarks design <https://unify.ai/docs/concepts/benchmarks.html>`_ section.

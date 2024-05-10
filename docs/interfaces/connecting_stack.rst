@@ -38,14 +38,12 @@ You can add a dataset on the :code:`Datasets` section of the console. There, cli
   :width: 650
   :alt: Console Dataset Start.
 
-The resulting screen lets you specify the local :code:`.jsonl` file to upload, containing the prompts you would like to benchmark on.
+The resulting screen lets you specify the local :code:`.jsonl` file to upload, containing the prompts you would like to benchmark on. You can also upload a file with reference answer prompts if you want to build a labelled dataset.
 
 .. image:: ../images/console_datasets_add.png
   :align: center
   :width: 650
   :alt: Console Dataset Add.
-
-Note that the screen above is only for unlabelled datasets, which works fine to benchmark endpoints. If you want to train a custom router then you'll need to upload a list of prompts along with reference answers.
 
 Once your dataset is uploaded, you can click on it to preview the prompts. For example, the image below shows the preview for a labelled dataset.
 

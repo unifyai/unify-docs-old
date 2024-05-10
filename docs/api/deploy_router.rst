@@ -80,32 +80,11 @@ explanation. You can detect this and change your policy doing something like:
 
 .. raw:: html
 
-    <table align="center">
-      <tr>
-        <td>
-          <div>
-              <iframe width="420" height="315" allow="fullscreen;"
-              src="https://www.youtube.com/embed/6T3jMwKfM7k?si=8bcLPXN1yUXjS4ND" class="video">
-              </iframe>
-          </div>
-        </td>
-        <td>
-          <div>
-              <iframe width="420" height="315" allow="fullscreen;"
-                src="https://www.youtube.com/embed/pul7fklQTZQ?si=HQwOm8C31ASuIC8o" class="video">
-              </iframe>
-          </div>
-        </td>
-        <td>
-          <div>
-            <iframe width="420" height="315" allow="fullscreen;"
-              src="https://www.youtube.com/embed/SBwr32iSU8Q?si=Rj3xknJEg0765Psb" class="video">
-            </iframe>            
-          </div>
-        </td>
-      </tr>
-    </table>
-
+    <div style="text-align: center;">
+      <iframe width="420" height="315" allow="fullscreen;"
+        src="https://www.youtube.com/embed/SBwr32iSU8Q?si=Rj3xknJEg0765Psb" class="video">
+      </iframe>            
+    </div>
 
 Using a custom router
 ---------------------
