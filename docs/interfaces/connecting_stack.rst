@@ -57,4 +57,4 @@ Once your dataset is uploaded, you can click on it to preview the prompts. For e
 Round Up
 --------
 
-That’s it, you now know how to upload your own endpoints and datasets! You can now `run custom benchmarks <https://unify.ai/docs/interfaces/running_benchmarks.html#custom_benchmarks>`_, `build a custom router <https://unify.ai/docs/interfaces/build_router.html>`_, or `query your endpoint <https://unify.ai/docs/api/first_request.html#custom_endpoint>`_ with the Unify API. 
+That’s it, you now know how to upload your own endpoints and datasets! You can now `run custom benchmarks <https://unify.ai/docs/interfaces/running_benchmarks.html>`_, `build a custom router <https://unify.ai/docs/interfaces/build_router.html>`_, or `query your endpoint <https://unify.ai/docs/api/first_request.html>`_ with the Unify API. 

@@ -24,7 +24,7 @@ You can explore our list of supported models through the `benchmarks interface <
 
 ..
   If you prefer programmatic access, you can also use the
-  `List Models Endpoint <https://unify.ai/docs/hub/reference/endpoints.html#get-models>`_ in our API to obtain a list of models.
+  `List Models Endpoint <https://unify.ai/docs/api/reference.html`_ in our API to obtain a list of models.
 
 
 Round Up

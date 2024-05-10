@@ -4,7 +4,7 @@ Deploying a router
 In this section, we'll learn how to use the Unify router through the API.
 
 .. note::
-    If you haven't done so, we recommend you learn how to `make a request <https://unify.ai/docs/interfaces/first_request.html>`_ first to get familiar with using the Unify API.
+    If you haven't done so, we recommend you learn how to `make a request <https://unify.ai/docs/api/first_request.html>`_ first to get familiar with using the Unify API.
 
 Using the base router
 ---------------------
@@ -12,7 +12,7 @@ Using the base router
 Optimizing a metric
 ^^^^^^^^^^^^^^^^^^^
 
-When making requests, you can leverage the information from the `benchmark interface <https://unify.ai/docs/hub/concepts/benchmarks.html>`_
+When making requests, you can leverage the information from the `benchmark interface <https://unify.ai/docs/concepts/benchmarks.html>`_
 to automatically route to the best performing provider for the metric you choose. 
 
 Benchmark values change over time, so dynamically routing ensures you always get the best option without having to monitor the data yourself.

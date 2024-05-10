@@ -48,7 +48,7 @@ Pricing and credits
 Credits are consumed when you query endpoints. Because we **don't apply any charge on top of provider costs**, consumed credits directly reflect the cost of a request. Upon signing-up, you are automatically granted **$50 in free credits**!
 
 .. note::
-    You can check your current balance through the billing page but also also directly within your terminal by querying the `Get Credits Endpoint <https://unify.ai/docs/api/reference.html#get-credits>`_ of the API.
+    You can check your current balance through the billing page but also also directly within your terminal by querying the `Get Credits Endpoint <https://unify.ai/docs/api/reference.html>`_ of the API.
 
 Top-up codes
 ^^^^^^^^^^^^

@@ -1,7 +1,7 @@
 Making your first request
 =========================
 
-In this section, you will learn how to use the Unify API to query and route across LLM endpoints. If you haven't done so already, start by :code:`Signing Up` through the `Unify Console <https://console.unify.ai>`_ to get your API key.
+In this section, you will learn how to use the Unify API to query and route across LLM endpoints. If you haven't done so already, start by `Signing Up <https://console.unify.ai>`_ to get your API key.
 
 Getting a key
 -------------
@@ -29,7 +29,7 @@ Going through one of the pages, the model Id can be copied from the model name a
   :alt: Benchmarks Model Page.
 
 .. note::
-    If you `uploaded a custom endpoint <https://unify.ai/docs/interfaces/connecting_stack.html#custom_endpoint>`_ then you should be able to query it through the API using the name as the model Id and the provider name as the provider Id. 
+    If you `uploaded a custom endpoint <https://unify.ai/docs/interfaces/connecting_stack.html>`_ then you should be able to query it through the API using the name as the model Id and the provider name as the provider Id. 
 
 Querying an endpoint
 --------------------
@@ -131,7 +131,7 @@ If you are using **Python**, you can use the :code:`requests` library to query t
     else:
         print(response.text)
 
-Check out the `API reference <https://unify.ai/docs/hub/reference/endpoints.html#post-query>`_ to learn more.
+Check out the `API reference <https://unify.ai/docs/api/reference.html>`_ to learn more.
 
 Using the OpenAI API Format
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^
@@ -193,7 +193,7 @@ Or **Python**:
     else:
         print(response.text)
 
-The docs for this endpoint are available `here. <https://unify.ai/docs/hub/reference/endpoints.html#post-chat-completions>`_
+The docs for this endpoint are available `here. <https://unify.ai/docs/api/reference.html`_
 
 Compatible Tools
 ^^^^^^^^^^^^^^^^

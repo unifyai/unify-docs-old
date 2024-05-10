@@ -5,7 +5,7 @@ Welcome to the Endpoints API reference!
 This page is your go-to resource when it comes to learning about the different Unify API endpoints you can interact with.
 
 .. note::
-  To use the endpoints you will need an API Key. If you don't have one yet, :code:`Sign Up` through the `Unify Console<https://console.unify.ai>`_.
+  If you don't have one yet, `Sign Up <https://console.unify.ai>`_ first to get your API key.
 
 -----
 

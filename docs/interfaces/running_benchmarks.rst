@@ -114,7 +114,7 @@ Quality benchmarks
 
 In order to train a router, or just compare the quality of endpoints, it’s necessary to first evaluate the performance of each model on each prompt of a dataset.
 
-On the :code:`Quality Benchmarks` subsection. You can click on :code:`SUBMIT JOB` to trigger a new benchmark comparing the output quality across different LLMs.
+On the :code:`Quality Benchmarks` subsection. You can click on :code:`Submit Job` to trigger a new benchmark comparing the output quality across different LLMs.
 
 You need to specify the endpoints and datasets you would like to benchmark. 
 
