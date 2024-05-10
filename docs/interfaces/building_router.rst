@@ -121,4 +121,4 @@ Once saved, the new router view and router configuration are then both visible o
 Round Up
 --------
 
-That’s it! You have now trained your first custom router, ready to be used through our API. You can now `deploy it <https://unify.aid/docs/api/deploy_router.html>`_, or learn `how to query endpoints <https://unify.ai/docs/api/first_request.html>`_ first.
+That’s it! You have now trained your first custom router, ready to be used through our API. You can now `deploy it <https://unify.ai/docs/api/deploy_router.html>`_, or learn `how to query endpoints <https://unify.ai/docs/api/first_request.html>`_ first.

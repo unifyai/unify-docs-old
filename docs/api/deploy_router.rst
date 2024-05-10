@@ -89,7 +89,7 @@ explanation. You can detect this and change your policy doing something like:
 Using a custom router
 ---------------------
 
-If you `trained a custom router <https://unify.ai/docs/interfaces/build_router.html>`_, you can deploy it with the Unify API much like using any other endpoint. Assuming we want to deploy the custom router we trained before, we can use the configuration Id in the same API call code to send our prompts to our custom router as follows:
+If you `trained a custom router <https://unify.ai/docs/interfaces/building_router.html>`_, you can deploy it with the Unify API much like using any other endpoint. Assuming we want to deploy the custom router we trained before, we can use the configuration Id in the same API call code to send our prompts to our custom router as follows:
 
 .. code-block:: python
 

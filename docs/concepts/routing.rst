@@ -6,7 +6,7 @@ In this section, you will learn what LLM routing is and how it works.
 What is routing?
 ----------------
 
-In the `benchmarks section <https://unify.ai/docs/concepts/benchmaks.html>`_, we discussed how different models perform better at different tasks, and how appropriate performance benchmarks can help steer and inform model selection for a given use-case. 
+In the `benchmarks section <https://unify.ai/docs/concepts/benchmarks.html>`_, we discussed how different models perform better at different tasks, and how appropriate performance benchmarks can help steer and inform model selection for a given use-case. 
 
 Given the diversity of prompts you can send to an LLM, it can quickly become tedious to manually swap between models for every single prompt, even when they pertain to the same broad category of tasks. 
 
@@ -53,4 +53,4 @@ With runtime routing, your requests are automatically redirected to the provider
 Round Up
 --------
 
-You are now familiar with routing. Next, you can `learn to use the router <htts://unify.ai/docs/api/deploy_router.html>`_, or `build your custom router <https://unify.ai/docs/interfaces/build_router.html>`_.
+You are now familiar with routing. Next, you can `learn to use the router <https://unify.ai/docs/api/deploy_router.html>`_, or `build your custom router <https://unify.ai/docs/interfaces/building_router.html>`_.
