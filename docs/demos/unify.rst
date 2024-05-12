@@ -14,6 +14,11 @@ Python Package Examples
 
         Exploring Sync vs Async Clients: Usage and Differences.
 
+    .. grid-item-card:: LLM Wars
+        :link: ./demos/Unify/LLM-Wars/README.md
+
+        LLMs face off in a Streamlit app, asking each other tough questions.
+
 .. toctree::
     :hidden:
     :maxdepth: -1
@@ -21,3 +26,4 @@ Python Package Examples
 
     ./demos/Unify/ChatBot/ChatBot.ipynb
     ./demos/Unify/AsyncVsSync/AsyncVsSync.ipynb
+    ./demos/Unify/LLM-Wars/README.md
