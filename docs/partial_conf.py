@@ -8,7 +8,7 @@ html_theme_options["navbar_end"] = ["theme-switcher", "navbar-icon-links"]
 html_theme_options.pop("switcher", None)  # Version switcher shouldn't be in model hub
 html_sidebars = {"**": ["custom-toc-tree"]}
 
-extensions.append('sphinxcontrib.video')
+extensions.append("sphinxcontrib.video")
 
 # Add any paths that contain custom static files (such as style sheets) here, relative to this directory.
 html_static_path.append('./demos/demos/videos/')
