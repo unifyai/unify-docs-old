@@ -19,6 +19,17 @@ Python Package Examples
 
         LLMs face off in a Streamlit app, asking each other tough questions.
 
+    .. grid-item-card:: Semantic Router
+        :link: ./demos/Unify/SemanticRouter/README.md
+
+        LLM Routing based on semantic similarity.
+
+    .. grid-item-card:: ChatBot Arena
+        :link: ./demos/Unify/Chatbot_Arena/README.md
+
+        Ask any question to two anonymous LLMs and vote for the better one!
+
+
 .. toctree::
     :hidden:
     :maxdepth: -1
@@ -27,3 +38,5 @@ Python Package Examples
     ./demos/Unify/ChatBot/ChatBot.ipynb
     ./demos/Unify/AsyncVsSync/AsyncVsSync.ipynb
     ./demos/Unify/LLM-Wars/README.md
+    ./demos/Unify/SemanticRouter/README.md
+    ./demos/Unify/Chatbot_Arena/README.md

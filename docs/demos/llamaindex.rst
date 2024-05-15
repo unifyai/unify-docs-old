@@ -1,18 +1,17 @@
-..
-    LlamaIndex Examples
-    ==================
+LlamaIndex Examples
+==================
 
-    .. grid:: 1 1 3 3
-        :gutter: 4
+.. grid:: 1 1 3 3
+    :gutter: 4
 
-        .. grid-item-card:: Project Name
-            :link: ./demos/LlamaIndex/README.md
+    .. grid-item-card:: LlamaIndex RAG Playground
+        :link: ./demos/LlamaIndex/RAGPlayground/README.md
 
-            Work in Progress
+        Retrieval Augmented Generation Playground built with LlamaIndex.
 
-    .. toctree::
-        :hidden:
-        :maxdepth: -1
-        :caption: LangChain Examples
+.. toctree::
+    :hidden:
+    :maxdepth: -1
+    :caption: LlamaIndex Examples
 
-        ./demos/LlamaIndex/README.md
+    ./demos/LlamaIndex/RAGPlayground/README.md

@@ -1,18 +1,17 @@
-..
-    LangChain Examples
-    ==================
+LangChain Examples
+==================
 
-    .. grid:: 1 1 3 3
-        :gutter: 4
+.. grid:: 1 1 3 3
+    :gutter: 4
 
-        .. grid-item-card:: Project Name
-            :link: ./demos/LangChain/README.md
+    .. grid-item-card:: Langchain RAG Playground
+        :link: ./demos/LangChain/RAG_playground/README.md
 
-            Work in Progress
+        Retrieval Augmented Generation with Langchain & Unify.
 
-    .. toctree::
-        :hidden:
-        :maxdepth: -1
-        :caption: LangChain Examples
-
-        ./demos/LangChain/README.md
+.. toctree::
+    :hidden:
+    :maxdepth: -1
+    :caption: LangChain Examples
+     
+    ./demos/LangChain/RAG_playground/README.md

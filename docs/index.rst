@@ -34,7 +34,6 @@
   :caption: Demos
 
   demos/unify.rst
-..
   demos/langchain.rst
   demos/llamaindex.rst
 
