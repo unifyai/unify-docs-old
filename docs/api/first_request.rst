@@ -43,7 +43,9 @@ The easiest way to use the Unify API is through the `unifyai <https://pypi.org/p
 
     pip install unifyai
 
-To use it in your script, import the package and initialize a :code:`Unify` client with your :code:`UNIFY API KEY`. You can then query any endpoint through the :code:`.generate` method. To specify the endpoint, you can use the model and provider Ids from above. 
+To use it in your script, import the package and insert the line :code:`UNIFY_KEY="Your_API_Key"` into the :code:`.env` file of your project. You can also pass your key into the :code:`api_key` argument or the Unify client but we recommend you store your key in an environment file for safety. We will assume you added your key to your :code:`.env` file for the remaining code examples.
+
+You are now ready to query any endpoint through the :code:`.generate` method. To specify the endpoint, you can use the model and provider Ids from above. 
 
 .. code-block:: python
 

@@ -3,8 +3,8 @@ Building a custom router
 
 In this section, you'll learn how to train and customize a router through the console.
 
-Training a custom router
-------------------------
+Training a custom router (Beta)
+-------------------------------
 
 Going to the :code:`Routers` page, you can add a new router by first clicking on :code:`Add Router`. The upload window enables you to name the router, and specify the endpoints to route between and datasets to train on.
 
@@ -44,8 +44,8 @@ With the benchmarks done, the router is moved to the training stage and, accordi
 
 Once the router training is complete, you will receive a second email. The router performance can now be visualized on the :code:`Dashboard` page.
 
-Customizing your router
------------------------
+Customizing your router (Beta)
+------------------------------
 
 Now that we have a trained router, the next step is to explore the various possible configurations for this router, each trading off quality, speed and cost in different variations. These various options can be visualized in the :code:`Dashboard`.
 

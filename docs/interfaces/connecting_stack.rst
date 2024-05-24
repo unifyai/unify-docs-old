@@ -3,8 +3,8 @@ Connecting your stack
 
 In this section, you'll learn how to add your own endpoints and datasets to the console.
 
-Custom endpoints
-----------------
+Custom endpoints (Beta)
+-----------------------
 
 Prerequisite
 ^^^^^^^^^^^^
