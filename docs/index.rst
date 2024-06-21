@@ -22,11 +22,9 @@
   :maxdepth: -1
   :caption: API
 
-  api/first_request.rst
-  api/deploy_router.rst
-  api/reference.rst
   api/unify_api.rst
   api/benchmarks.rst
+  api/router.rst
 
 ..  reference/images.rst
 

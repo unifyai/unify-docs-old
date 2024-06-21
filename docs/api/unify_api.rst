@@ -1,17 +1,13 @@
 Universal API
 ==============
-Learn how to query our API.
 
-Introduction
--------------
 There’s a sea of models and providers, with new LLMs coming out all the time.
 Each provider has its own API keys, account balance, and subtle nuances in how the models are queried.
 
 The Unify Universal API provides:
 
-- a single, common interface for all models and providers
-- one api key
-- one account balance
+- A single, common interface for all models and providers
+- One account, with one balance and one API key
 
 You can interact with the API through a HTTP request from any programming language, through our own Unify Python package, or through the OpenAI Python package.
 
@@ -90,9 +86,8 @@ The response from a request should look something like this:
     ]
     }
 
-The LLM's output is accessed via :code:`choices[0].message.content`.
+The output from the LLM is accessed via :code:`choices[0].message.content`.
 The :code:`usage` field contains the number of prompt/completion tokens, as well as the total cost of the request, in US$.
-
 In the request you can specify other common parameters, like
 :code:`temperature`, :code:`stream` and :code:`max_tokens`.
 
@@ -100,15 +95,16 @@ You can specify all of the parameters that OpenAI supports, but they may not be 
 
 Unify Python Package
 ^^^^^^^^^^^^^^^^^^^^
-First, download our Python package with :code:`pip install unifyai`
+First, download our `Python package <https://github.com/unifyai/unify>`_ with :code:`pip install unifyai`.
 
-.. code-block :: python
+There is complete documentation in the `readme <https://github.com/unifyai/unify/blob/main/README.md>`_.
+Sample inference
+
+.. code-block:: python
 
     from unify import Unify
     unify = Unify("llama-3-8b-chat@fireworks-ai", api_key="$UNIFY_API_KEY")
-    response = unify.generate("Say hi.")```
-
-Much more detailed in the (readme)[https://github.com/unifyai/unify/blob/main/README.md]
+    response = unify.generate("Say hi.")
 
 OpenAI Python package
 ^^^^^^^^^^^^^^^^^^^^^
@@ -131,13 +127,13 @@ The Unify API is designed to be compatible with the OpenAI standard, so if you h
     for chunk in stream:
         print(chunk.choices[0].delta.content or "", end="")
 
-Remember that the :code:`model` field needs to contain :code:`model@provider`.
+Remember that the :code:`model` field needs to contain a string of the form :code:`model@provider`.
 
 Billing
 -------
 You only have to manage the balance and billing details for your Unify account, and we handle the spending with each provider behind the scenes.
 
-You can see your balance, top-up your balance, and set automatic refill on the [billing page](https://console.unify.ai/billing)
+You can see your balance, top-up your balance, and set automatic refill on the `billing page <https://console.unify.ai/billing>`_.
 
 You can get your current credit balance with a HTTP request:
 
@@ -163,7 +159,7 @@ Custom endpoints
 ^^^^^^^^^^^^^^^^^
 If you have a custom model which is deployed as an endpoint on (for example a fine-tuned model with OpenAI or Together AI) you can `add your own custom endpoint <https://console.unify.ai/endpoints>`_.
 
-You need the Endpoint URL and the relevant API key. Once the endpoint is added, you can query it using the model string :code:`<endpoint-name>@custom`
+To create a custom endpoint, you need the Endpoint URL and the relevant API key. You can query a custom endpoint using the model string :code:`<endpoint-name>@custom`
 
 LLM Fallbacks
 ^^^^^^^^^^^^^^
@@ -173,4 +169,4 @@ To combat this, set a list of fallback models, so if one provider is down or fai
 
 To specify the list of fallback models, use :code:`->` between individual model tags, so the model string becomes :code:`model_a@provider_a->model_b@provider_b`.
 
-There is no limit on the number of models that can be specified. In order to know which model the request successfully went to, read the :code:`model` field in the response.
+There is no limit on the number of models that can be specified. The :code:`model` field in the response contains the model and provider that the request actually went to.
