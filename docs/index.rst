@@ -25,6 +25,8 @@
   api/first_request.rst
   api/deploy_router.rst
   api/reference.rst
+  api/unify_api.rst
+  api/benchmarks.rst
 
 ..  reference/images.rst
 
