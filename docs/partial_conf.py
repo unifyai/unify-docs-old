@@ -15,7 +15,7 @@ html_static_path.append('./demos/demos/videos/')
 
 
 
-project = "Platform"
+project = "Unify"
 html_title = "Unify Documentation"
 
 # Removing kapa.ai integration
