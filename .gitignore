@@ -149,6 +149,7 @@ application_default_credentials.json
 # SQL Dump files
 *.dump.sql
 
-# Unify code
+# unify files during doc-building
 unify
 pyproject.toml
+README.md
