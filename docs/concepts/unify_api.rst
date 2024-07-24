@@ -103,8 +103,8 @@ Sample inference
 .. code-block:: python
 
     from unify import Unify
-    unify = Unify("llama-3-8b-chat@fireworks-ai", api_key="$UNIFY_API_KEY")
-    response = unify.generate("Say hi.")
+    client = Unify("llama-3-8b-chat@fireworks-ai", api_key="$UNIFY_API_KEY")
+    response = client.generate("Say hi.")
 
 OpenAI Python Package
 ^^^^^^^^^^^^^^^^^^^^^
