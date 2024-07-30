@@ -14,11 +14,31 @@ Comparing quality, cost and speed, and iterate on your system prompt until all t
 Getting Started
 ---------------
 
-We recommend you give the concepts section a quick read to get familiar with routing and benchmarking. Once you're ready to go, start by `Signing In <https://console.unify.ai>`_. From this point you can either learn how to:
+It's easiest to get started using our Python client. Simply install the package:
 
-* **Use our interfaces (Recommended)**: The interfaces guides explain how to interact with endpoints and deploy your custom router in a no-code environment. 
+.. code-block:: bash
 
-* **Make your first request**: The api guides explains how to start querying endpoints and using the router with our API.  
+    pip install unifyai
 
-.. warning::
-    Throughout the guides, you'll notice some sections marked as (Beta). **Any section marked as Beta is currently not available** and only illustrate planned features we are currently working on. We're constantly iterating on our roadmap so if you'd like to leave some feedback or suggestion on features you'd like to see, `we'd love to discuss <https://calendly.com/daniel-lenton/beta-discussion>`_ this with you!
+`Sign up <https://console.unify.ai>`_ to get your API key. Then you're ready to go! 🚀
+
+.. code-block:: python
+
+    import unify
+    client = unify.Unify("gpt-4o@openai", api_key=<your_key>)
+    client.generate("hello world!")
+
+You can also save your key as :code:`UNIFY_KEY` in your environment variables, avoiding the need to use the :code:`api_key` argument.
+
+You can list all available endpoints like so, any of which can be passed into the client:
+
+.. code-block:: python
+
+    import unify
+    import random
+    endpoints = unify.utils.list_endpoints()
+    endpoint = random.choice(endpoints)
+    client = unify.Unify(endpoint)
+    client.generate("hello world!")
+
+That's it! You now have all models and providers at your fingertips ✨
