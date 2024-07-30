@@ -1,5 +1,4 @@
 from typing import List
-import os
 
 # Retrieve html_theme_options from docs/conf.py
 from docs.conf import html_theme_options, extensions, html_static_path
@@ -12,8 +11,6 @@ extensions.append("sphinxcontrib.video")
 
 # Add any paths that contain custom static files (such as style sheets) here, relative to this directory.
 html_static_path.append('./demos/demos/videos/')
-
-
 
 project = "Unify"
 html_title = "Unify Documentation"
